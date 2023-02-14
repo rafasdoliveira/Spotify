@@ -1,6 +1,26 @@
 body {
-  background:#94e18e;
+  background:#fdfdfdfd;
   text-align: center;
+  font-family: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.genero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.termos {
+  text-align: center;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
 }
 
 button {
