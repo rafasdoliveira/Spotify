@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="icon" href="imgs/logos/logo.png">
+  <title>Inscrever-se - Spotify</title>
+</head>
+<header>
+  <img width="170px" height="50px" src="imgs/logos/spotify-logo-preto-png.png" alt="Logo Spotify Preta">
+  <h2>Inscreva-se grátis e comece a curtir.</h2>
+</header>
+
+<body>
+  <forms>
+  <div class = "info">
+    <label><strong>Qual é o seu e-mail?</strong></label><input type="email" placeholder="Insira seu e-mail." required>
+    <label><strong>Confirme seu e-mail</strong></label><input type="email" placeholder="Insira o e-mail novamente." required>
+    <label><strong>Crie uma senha</strong></label><input type="password" placeholder="Cria uma senha." required>
+    <label><strong>Como devemos chamar você?</strong></label><input type="text" placeholder="Insira um nome de perfil" required>
+    <p>Isso aparece no seu perfil</p>
+    <label><strong>Qual sua data de nascimento?</strong></label><input type="date" placeholder="" required>
+  </div>
+  </forms>
+
+  <forms>
+  <div class = "genero">
+    <label><strong>Qual é o seu gênero?</strong></label>
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="feminino">Feminio</label>
+    <input type="radio" id="feminino" name="genero" value="feminino">
+    <label for="nbinario">Não binário</label>
+    <input type="radio" id="nbinario" name="genero" value="nbinario">
+    <label for="outros">Outros</label>
+    <input type="radio" id="outros" name="genero" value="outros">
+    <label for="notsay">Prefiro não dizer</label>
+    <input type="radio" id="notsay" name="genero" value="notsay">
+  </div>
+  </forms>
+
+  <forms>
+    <div class = "termos">
+      <input type="checkbox">
+      <label for = "checkbox">Não quero receber mensagens de marketing do Spotify</label>
+    </div>
+    <div class = "termos">
+      <input type="checkbox">
+      <label for = "checkbox">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing.</label>
+    </div>
+    <div class = "termos">
+      <input type="checkbox">
+      <label for = "checkbox">Eu concordo com os <a href="https://www.spotify.com/br/legal/end-user-agreement/">Termos e Condições de Uso do Spotify.</a></label>
+    </div>
+  </forms>
+
+<div>
+  <p>Para saber mais sobre como o Spotify coleta, utiliza, 
+    compartilha e protege seus dados pessoais, leia a 
+    <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotify.</a></p>
+    <button> <span>Inscrever-se</span></button>
+  </div>
+  </body>
+<footer>
+</footer>
+</html>
