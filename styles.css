@@ -1,84 +1,68 @@
-body {
-  background:#fdfdfdfd;
-  text-align: center;
-  font-family: 0;
+header{
+  background-color: #000000;
+  width: 100%;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #000;
-  font-size: 0.875rem;
-}
-
-.genero {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: center;
-  color: #000;
-  font-size: 0.875rem;
-}
-.termos {
+.promo {
+  background-color: #f037a5;
+  color: #fdfdfd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
   display: flex;
   flex-direction: row;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  justify-content: center;
-  color: #000;
-  font-size: 0.875rem;
 }
 
-button {
-  outline: none;
-  cursor: pointer;
+.signup{
+  font-size: 1rem;
+  align-items: center;
+  height: 48px;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  padding: 0 1.2rem;
+  color: #ddd;
   border: none;
-  padding: 0.9rem 2rem;
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 0.05rem;
-  font-weight: 700;
-  font-size: 17px;
-  border-radius: 500px;
+  box-shadow:  0 .5rem 1rem rgba(143, 142, 142, 0.15) ;
+  background: #000000;
+}
+
+button:hover {
+  background: #2b2a2a;
+ }
+
+.verplanos {
+  
+}
+.planos {
+  display: flex;
+  flex-direction: row;
+}
+
+.individual {
+  width: 200px;
+  height: 254px;
+  background: none;
+  padding: 1rem;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: .4rem .4rem;
   overflow: hidden;
-  background: #66ff66;
-  color: ghostwhite;
- }
- 
- button span {
-  position: relative;
-  z-index: 10;
-  transition: color 0.4s;
- }
- 
- button:hover span {
-  color: black;
- }
- 
- button::before,
- button::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
- }
- 
- button::before {
-  content: "";
-  background: #000;
-  width: 120%;
-  left: -10%;
-  transform: skew(30deg);
-  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
- }
- 
- button:hover::before {
-  transform: translate3d(100%, 0, 0);
- }
- 
+}
+
+.duo {
+  width: 200px;
+  height: 254px;
+  background: none;
+  padding: 1rem;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: .4rem .4rem;
+  overflow: hidden;
+}
+
+.familia {
+  width: 200px;
+  height: 254px;
+  background: none;
+  padding: 1rem;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: .4rem .4rem;
+  overflow: hidden;
+}
