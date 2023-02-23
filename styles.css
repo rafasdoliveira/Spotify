@@ -221,7 +221,7 @@ footer {
   align-items: center;
   margin-top: 20px;
   font-size: 1rem;
-  font-family: montserrat;
+  font-family: montserrat-bold;
 
 }
 
@@ -229,8 +229,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 10px 10px 10px;
-  font-size: 0.875rem;
+  margin: 5px 5px 5px 5px;
+  font-size: 0.975rem;
   font-family: montserrat;
   
 }
@@ -243,7 +243,9 @@ footer {
 }
 
 .formslabel {
-  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   font-family: montserrat-bold;
 }
 
@@ -261,17 +263,17 @@ footer {
   align-items: center;
   font-size: 10px;
   color: #363636;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .input {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   height: 40px;
   border-radius: 10px;
-  padding-left: 10px;
-  border: none;
-  border-bottom: 1px solid #e5e5e5;
-  outline: none;
+  padding-left: 100px;
+  border: 1px 1px 1px 1px solid #e5e5e5 ;
 }
 
 .input:focus {
@@ -279,6 +281,25 @@ footer {
   -webkit-transition: 0.1s;
   transition: 0.5s;
 }
+
+.inscrevase {
+  font-size: 1rem;
+  align-items: center;
+  height: 48px;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  padding: 0 1.2rem;
+  color: #000000;
+  border: none;
+  box-shadow:  0 .5rem 1rem rgba(143, 142, 142, 0.15) ;
+  background: #00FF7F;
+}
+
+.inscrevase:hover {
+  cursor: pointer;
+  background: #00FF7F;
+ }
+
 
 .enfase{
   text-align: center;
