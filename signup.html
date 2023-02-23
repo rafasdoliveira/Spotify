@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,63 +10,96 @@
   <title>Inscrever-se - Spotify</title>
 </head>
 <header>
-  <a href="signup.html">Inscreva-se</a>
-  <a href="faq.html">Suporte</a>
-  <a href="webplayer.html">Web player</a><br>
-  <img width="170px" height="50px" src="imgs/logos/spotify-logo-preto-png.png" alt="Logo Spotify Preta">
-  <h2>Inscreva-se grátis e comece a curtir.</h2>
+  <!--Links para as outras páginas juntamente da logo e slogan do Spotify-->
+  <div class="imgwhite">
+    <a href="index.html">
+      <img width="170px" height="50px" src="imgs/logos/Spotify_Logo_RGB_White.png" alt="Logo Spotify Branca">
+    </a>
+  </div>
+
+  <div class="links">
+    <div class="link-top">
+      <a class="aheader" href="signup.html"><strong>Inscreva-se</strong></a>
+    </div>
+    <div class="link-top">
+      <a class="aheader" href="faq.html"><strong>Suporte</strong></a>
+    </div>
+    <div class="link-top">
+      <a class="aheader" href="webplayer.html"><strong>Web player</strong></a>
+    </div>
+  </div>
 </header>
 
 <body>
   <forms>
-  <div class = "info">
-    <label><strong>Qual é o seu e-mail?</strong></label><input type="email" placeholder="Insira seu e-mail." required>
-    <label><strong>Confirme seu e-mail</strong></label><input type="email" placeholder="Insira o e-mail novamente." required>
-    <label><strong>Crie uma senha</strong></label><input type="password" placeholder="Cria uma senha." required>
-    <label><strong>Como devemos chamar você?</strong></label><input type="text" placeholder="Insira um nome de perfil" required>
-    <p>Isso aparece no seu perfil</p>
-    <label><strong>Qual sua data de nascimento?</strong></label><input type="date" placeholder="" required>
-  </div>
+    <div class="info">
+      <label><strong>Qual é o seu e-mail?</strong></label><input type="email" placeholder="Insira seu e-mail." required>
+      <label><strong>Confirme seu e-mail</strong></label><input type="email" placeholder="Insira o e-mail novamente."
+        required>
+      <label><strong>Crie uma senha</strong></label><input type="password" placeholder="Cria uma senha." required>
+      <label><strong>Como devemos chamar você?</strong></label><input type="text" placeholder="Insira um nome de perfil"
+        required>
+      <p>Isso aparece no seu perfil</p>
+      <label><strong>Qual sua data de nascimento?</strong></label><input type="date" placeholder="" required>
+    </div>
   </forms>
 
   <forms>
-  <div class = "genero">
-    <label><strong>Qual é o seu gênero?</strong></label>
-    <label for="masculino">Masculino</label>
-    <input type="radio" id="masculino" name="genero" value="masculino">
-    <label for="feminino">Feminio</label>
-    <input type="radio" id="feminino" name="genero" value="feminino">
-    <label for="nbinario">Não binário</label>
-    <input type="radio" id="nbinario" name="genero" value="nbinario">
-    <label for="outros">Outros</label>
-    <input type="radio" id="outros" name="genero" value="outros">
-    <label for="notsay">Prefiro não dizer</label>
-    <input type="radio" id="notsay" name="genero" value="notsay">
-  </div>
+    <div class="genero">
+      <label><strong>Qual é o seu gênero?</strong></label>
+      <label for="masculino">Masculino</label>
+      <input type="radio" id="masculino" name="genero" value="masculino">
+      <label for="feminino">Feminio</label>
+      <input type="radio" id="feminino" name="genero" value="feminino">
+      <label for="nbinario">Não binário</label>
+      <input type="radio" id="nbinario" name="genero" value="nbinario">
+      <label for="outros">Outros</label>
+      <input type="radio" id="outros" name="genero" value="outros">
+      <label for="notsay">Prefiro não dizer</label>
+      <input type="radio" id="notsay" name="genero" value="notsay">
+    </div>
   </forms>
 
   <forms>
-    <div class = "termos">
+    <div class="termos">
       <input type="checkbox">
-      <label for = "checkbox">Não quero receber mensagens de marketing do Spotify</label>
+      <label for="checkbox">Não quero receber mensagens de marketing do Spotify</label>
     </div>
-    <div class = "termos">
+    <div class="termos">
       <input type="checkbox">
-      <label for = "checkbox">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing.</label>
+      <label for="checkbox">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de
+        marketing.</label>
     </div>
-    <div class = "termos">
+    <div class="termos">
       <input type="checkbox">
-      <label for = "checkbox">Eu concordo com os <a href="https://www.spotify.com/br/legal/end-user-agreement/">Termos e Condições de Uso do Spotify.</a></label>
+      <label for="checkbox">Eu concordo com os <a href="https://www.spotify.com/br/legal/end-user-agreement/">Termos e
+          Condições de Uso do Spotify.</a></label>
     </div>
   </forms>
 
-<div>
-  <p>Para saber mais sobre como o Spotify coleta, utiliza, 
-    compartilha e protege seus dados pessoais, leia a 
-    <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotify.</a></p>
+  <div>
+    <p>Para saber mais sobre como o Spotify coleta, utiliza,
+      compartilha e protege seus dados pessoais, leia a
+      <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotify.</a>
+    </p>
     <button> <span>Inscrever-se</span></button>
   </div>
-  </body>
+</body>
 <footer>
+  <div class="imgwhite">
+    <img width="170px" height="50px" src="imgs/logos/Spotify_Logo_RGB_White.png" alt="Logo Spotify Branca">
+  </div>
+
+  <!-- <div class="uni4white">
+      <img width="70px" height="50px" src="imgs/logos/Logo unifor white.png" alt="Logo Unifor Branca">
+    </div> -->
+
+  <div class="developers">
+    <label>Powered By</label>
+    <a class="link-footer" href="https://github.com/jeosafaferreira" target="_blank">Jeosafá Ferreira |</a>
+    <a class="link-footer" href="https://github.com/leonardovioliveira" target="_blank">Leonardo Vincente |</a>
+    <a class="link-footer" href="https://github.com/rafasdoliveira" target="_blank">Rafael Oliveira</a>
+
 </footer>
+
 </html>

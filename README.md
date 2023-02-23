@@ -12,6 +12,17 @@ Nesse projeto desenvolveremos uma aplicação do Spotify.
 - [ ] Caso cenário 5 (Introdução a Back-end): 1,5 ponto
 - [ ] Caso cenário 6 (Acesso a dados e Integração): 1,5 ponto
 
+### Primeira Entrega - HTML e CSS
+- [x] Três páginas estáticas
+- [x] 1ª Página: Página Inicial
+- [x] 2ª Página: Suporte (FAQ)
+- [x] 3ª Página: Inscrição
+- [x] Imagens
+- [x] Links
+- [x] Listas
+- [ ] Tabela
+- [x] Formulário
+- [ ] CSS
 ### Línguagens utilizadas:
 - React
 - Node.js
