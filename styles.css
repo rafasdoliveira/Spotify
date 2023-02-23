@@ -1,5 +1,6 @@
 @font-face {
   font-family: montserrat-bold;
+<<<<<<< HEAD
   src: url(fonts/Montserrat-Bold.ttf);
 }
 @font-face {
@@ -7,6 +8,15 @@
   src: url(fonts/Montserrat-Regular.ttf);
 }
 /** Estilos da Header **/
+=======
+  src: url(fontes/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: montserrat;
+  src: url(fontes/Montserrat-Regular.ttf);
+}
+
+>>>>>>> origin/main
 header{
   background-color: #000000;
   display: flex;
@@ -20,6 +30,14 @@ header{
   margin-left: 70px;
   margin-top: 20px;
   margin-bottom: 20px;
+<<<<<<< HEAD
+=======
+}
+
+.aheader {
+  color: #fdfdfd;
+  text-decoration: none;
+>>>>>>> origin/main
 }
 /** Links da Header e termos **/
 .aheader {
@@ -87,6 +105,17 @@ body{
   border-width: 2rem;
   box-shadow:  0 .5rem 1rem rgba(143, 142, 142, 0.15) ;
   background: none;
+<<<<<<< HEAD
+}
+
+.verplanos:hover {
+  background: #80ed99;
+ }
+
+.promotitle {
+  margin-top: 30px;
+  margin-left: 70px;
+=======
 }
 
 .verplanos:hover {
@@ -101,6 +130,64 @@ body{
 .botoespromo {
   display: flex;
   flex-direction: row;
+  margin-left: 70px;
+}
+
+.termos{
+  font-size: 12px;
+  color: #fdfdfd;
+  margin-left: 70px;
+  margin-bottom: 35px;
+}
+
+.premium {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.premiumtitle {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-left: 470px;
+}
+
+.motivos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.lip {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgpremium {
+  display: flex;
+  height: 50px;
+  margin-left: 70px;
+  margin-bottom: 60px;
+}
+
+.planotitle {
+  background-color: #edede9;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+>>>>>>> origin/main
+}
+
+.botoespromo {
+  display: flex;
+  flex-direction: row;
+<<<<<<< HEAD
   margin-left: 70px;
 }
 
@@ -179,6 +266,31 @@ body{
   margin-top: 20px;
 }
 
+=======
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.outrosplanos {
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  margin-right: 10px;
+  margin-left: 25px;
+  padding: 1rem;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem;
+  overflow: hidden;
+  background-color: #fdfdfd;
+}
+
+.botaoplano {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+}
+
+>>>>>>> origin/main
 footer {
   background-color: #000000;
   width: 100%;
@@ -189,6 +301,7 @@ footer {
   padding-top: 30px;
 }
 
+<<<<<<< HEAD
 .row {
   display: flex;
   flex-direction: row;
@@ -203,6 +316,14 @@ footer {
   flex-direction: column;
   width: 30%;
   margin: 0px 5% 0px 5%
+=======
+.faq{
+  display:flex; flex-direction: row;
+}
+
+.faq-column{
+  display: flex;flex-direction: column; width: 30%; margin: 0px 5% 0px 5%
+>>>>>>> origin/main
 }
 
 .card{
@@ -213,6 +334,7 @@ footer {
   height: 300px;
 }
 
+<<<<<<< HEAD
 /** formulario signup / inscreva-se **/
 
 .formstitle {
@@ -301,6 +423,8 @@ footer {
  }
 
 
+=======
+>>>>>>> origin/main
 .enfase{
   text-align: center;
   font-family: montserrat-bold;
