@@ -1,0 +1,16 @@
+.webplayer {
+    background-color: #000000;
+}
+.cardtop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.carddown {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+}
+
