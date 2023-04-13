@@ -1,0 +1,21 @@
+.botaoplano {
+  width: 100%; 
+  margin-top: 20px;
+}
+
+.signup {
+  font-size: 1rem;
+  align-items: center;
+  height: 48px;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  padding: 0 1.2rem;
+  color: #fdfdfd;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(143, 142, 142, 0.15);
+  background: #000000;
+}
+
+.signup:hover {
+  background: #2b2a2a;
+}
