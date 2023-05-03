@@ -6,6 +6,8 @@ import SignUp from './pages/SignUp/SignUp'
 import Webplayer from './pages/Webplayer/Webplayer'
 import Playlist from './pages/Playlist/Playlist'
 import UserOk from './pages/UserOk/UserOk'
+import Login from './pages/Login/login'
+import Cadastro from './pages/Cadastro/cadastro'
 import reportWebVitals from './reportWebVitals';
 
 import {
@@ -24,6 +26,8 @@ render(
       <Route path="/webplayer" element={<Webplayer />}/>
       <Route path="/playlist/:id" element={<Playlist />}/>
       <Route path="/userok" element={<UserOk />}/>
+      <Route path="/login" element={<Login />}/>
+      <Route path="/cadastro" element={<Cadastro />}/>
     </Routes>
   </BrowserRouter>,
   rootElement
