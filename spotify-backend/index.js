@@ -6,6 +6,7 @@ const port = 8081;
 const usuariosController = require('./controllers/UsuariosController');
 const playlistsController = require('./controllers/PlaylistsController');
 const musicasController = require('./controllers/MusicasController');
+const musicaPlaylistController = require('./controllers/MusicaPlaylistController');
 
 app.use(bodyParser.json());
 app.use(
@@ -19,7 +20,7 @@ app.get('/', (request, response) => {
 });
 
 //USUÁRIOS
-app.get('/usuarios', usuariosController.list);
+app.get('/usuarios', usuariosController.list);  
 app.get('/usuarios/:id', usuariosController.getById);
 app.post('/usuarios', usuariosController.create);
 app.put('/usuarios/:id', usuariosController.update);
@@ -32,6 +33,15 @@ app.get('/playlists/:id', playlistsController.getById);
 app.post('/playlists', playlistsController.create);
 app.put('/playlists/:id', playlistsController.update);
 app.delete('/playlists/:id', playlistsController.del);
+
+//MÚSICA PLAYLIST
+app.get('/musicaplaylist', musicaPlaylistController.list);
+app.get('/musicaplaylist/musica/:id', musicaPlaylistController.getByMusicaId);
+app.get('/musicaplaylist/playlist/:id', musicaPlaylistController.getByPlaylistId);
+app.post('/musicaplaylist', musicaPlaylistController.create);
+app.put('/musicaplaylist/:id', musicaPlaylistController.update);
+app.delete('/musicaplaylist/:id', musicaPlaylistController.del);
+
 
 //MÚSICAS
 app.get('/musicas', musicasController.list);
