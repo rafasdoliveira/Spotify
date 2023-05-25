@@ -19,6 +19,8 @@ app.get('/', (request, response) => {
   response.json({ info: 'Node.js, Express, and Postgres API' });
 });
 
+try{
+
 //USUÁRIOS
 app.get('/usuarios', usuariosController.list);  
 app.get('/usuarios/:id', usuariosController.getById);
@@ -26,6 +28,14 @@ app.post('/usuarios', usuariosController.create);
 app.put('/usuarios/:id', usuariosController.update);
 app.delete('/usuarios/:id', usuariosController.del);
 app.post('/usuarios/login', usuariosController.login);
+
+//MÚSICAS
+app.get('/musicas', musicasController.list);
+app.get('/musicas/:id', musicasController.getById);
+app.get('/musicas/titulo/:titulo', musicasController.getByTitulo);
+app.post('/musicas', musicasController.create);
+app.put('/musicas/:id', musicasController.update);
+app.delete('/musicas/:id', musicasController.del);
 
 //PLAYLISTS
 app.get('/playlists', playlistsController.list);
@@ -41,16 +51,9 @@ app.get('/musicaplaylist/playlist/:id', musicaPlaylistController.getByPlaylistId
 app.post('/musicaplaylist', musicaPlaylistController.create);
 app.put('/musicaplaylist/:id', musicaPlaylistController.update);
 app.delete('/musicaplaylist/:id', musicaPlaylistController.del);
-
-
-//MÚSICAS
-app.get('/musicas', musicasController.list);
-app.get('/musicas/:id', musicasController.getById);
-app.get('/musicas/titulo/:titulo', musicasController.getByTitulo);
-app.post('/musicas', musicasController.create);
-app.put('/musicas/:id', musicasController.update);
-app.delete('/musicas/:id', musicasController.del);
-
+}catch(error){
+  console.log("erro ...!")
+}
 app.listen(port, () => {
   console.log(`App running on port ${port}.`);
 });

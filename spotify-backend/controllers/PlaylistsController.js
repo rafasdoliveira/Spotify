@@ -23,20 +23,24 @@ const getById = (request, response) => {
 };
 
 const create = (request, response) => {
-  const { titulo, subtitulo, url_imagem } = request.body;
+  const { titulo, subtitulo, url_imagem, usuario_id } = request.body;
 
   pool.query(
-    'INSERT INTO public.playlists (titulo, subtitulo, url_imagem) VALUES ($1, $2, $3) RETURNING playlist_id',
-    [titulo, subtitulo, url_imagem],
+    'INSERT INTO public.playlists (titulo, subtitulo, url_imagem, usuario_id) VALUES ($1, $2, $3, $4) RETURNING playlist_id',
+    [titulo, subtitulo, url_imagem, usuario_id],
     (error, results) => {
-      if (error) {
-        response.status(500).json("Erro ao cadastrar.")
-        throw error;
+      try {
+        if (error) {
+          response.status(500).json("Erro ao cadastrar.")
+          throw error;
+        }
+        response.status(201).json({
+          mensagem:'Cadastrado realizado com sucesso!',
+          playlist_id: results.rows[0].playlist_id
+        });
+      }catch(error){
+        console.log("erro ...!")
       }
-      response.status(201).json({
-        mensagem:'Cadastrado realizado com sucesso!',
-        playlist_id: results.rows[0].playlist_id
-      });
     }
   );
 };
