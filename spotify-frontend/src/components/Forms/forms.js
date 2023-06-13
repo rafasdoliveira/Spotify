@@ -2,9 +2,7 @@ import styles from "./forms.module.css";
 
 export default function Forms(props) {
   return (
-    <div>
-      <div className={styles.dados}>
-        <forms>
+
           <div className={styles.formulario}>
             <label className={styles.label}>{props.label}</label>
             <input
@@ -14,8 +12,5 @@ export default function Forms(props) {
               required
             />
           </div>
-        </forms>
-      </div>
-    </div>
   );
 }

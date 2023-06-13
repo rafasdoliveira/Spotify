@@ -1,65 +1,44 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import CardWebPlayer from "../../components/CardWebPlayer/Cards";
 import styles from "./webplayer.module.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Webplayer() {
+  const [playlists, setPlaylists] = useState([])
+  const getPlaylists = async () => {
+    const res = await axios.get('http://localhost:8081/playlists')  
+    setPlaylists(res.data)
+    console.log(playlists)
+  }
+
+  useEffect(()=>{
+      getPlaylists()
+  }, [])
+
   return (
     <div>
       <main>
         <Header />
         <div className={styles.webplayer}>
           <div className={styles.cardtop}>
-            <CardWebPlayer
-              src="/playlist/1"
+            {playlists.map((playlist) => (
+              <CardWebPlayer
+              src={`/playlist/${playlist.id}`}
               className={styles.image}
-              image="/cards/reggae.jpg"
-              title="Natiruts"
-              subtitle="O melhor de Natiruts!"
+              image={playlist.url_imagem}
+              title={playlist.titulo}
+              subtitle={playlist.subtitulo}
             />
-            <CardWebPlayer
-              src="/playlist/2"
-              image="/cards/morada.jpg"
-              title="Morada"
-              subtitle="Os melhores louvores para se concetar com o Pai."
-            />
-            <CardWebPlayer
-              src="/playlist/3"
-              image="/cards/workout.jpg"
-              title="Run This Town"
-              subtitle="Run to the world of R&B and hip-hop."
-            />
-            <CardWebPlayer
-              src="/playlist/4"
-              image="/cards/hipster.jpg"
-              title="Hipsters Ponto Tech"
-              subtitle="Discussões sobre tecnologia, programação, desgin, startups e as útilmas tendências."
-            />
-          </div>
-          <div className={styles.carddown}>
-            <CardWebPlayer
-              src="/playlist/5"
-              image="/cards/surf.jpg"
-              title="Surf Trip"
-              subtitle="Entre na vibe do surf com os melhores sons e as melhores vibrações!"
-            />
-            <CardWebPlayer
-              src="/playlist/6"
-              image="/cards/jazz.jpg"
-              title="Jazz for Reading"
-              subtitle="Jazz piano to accompany your reading."
-            />
-            <CardWebPlayer
-              src="/playlist/7"
-              image="/cards/keepcalm.jpg"
-              title="Keep Calm"
-              subtitle="Um pouco de tudo para você."
-            />
-            <CardWebPlayer
-              src="/playlist/8"
-              image="/cards/Parachutes.jpg"
-              title="Parachutes"
-              subtitle="Album 2000 Coldplay!"
+            ))}
+             <CardWebPlayer
+              src="/playlist/add"
+              className={styles.image}
+              image="/cards/plus.jpg"
+              title="Nova playlist ..."
+              subtitle=""
             />
           </div>
         </div>

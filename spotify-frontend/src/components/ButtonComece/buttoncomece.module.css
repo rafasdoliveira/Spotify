@@ -1,6 +1,8 @@
 .botaoplano {
   width: 100%; 
   margin-top: 20px;
+  align-items: center;
+  display: inline-block;
 }
 
 .signup {

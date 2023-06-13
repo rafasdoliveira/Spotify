@@ -32,6 +32,11 @@ export default function Header() {
             <strong>Web player</strong>
           </Link>
         </div>
+        <div className={styles.linktop}>
+          <Link className="aheader" to="/login">
+            <strong>Login</strong>
+          </Link>
+        </div>
       </div>
     </header>
   );
